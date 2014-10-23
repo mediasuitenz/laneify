@@ -1,31 +1,32 @@
 'use strict';
 
 require('chai').should()
+
 var laneify = require('../index')
 
 var way = {
-    type: 'Feature',
-    id: 'way/23150691',
-    properties: {
-        highway: 'residential',
-    },
-    geometry: {
-        type: 'LineString',
-        coordinates: [
-            [
-                172.6788568,
-                -43.5289081
-            ],
-            [
-                172.6787559,
-                -43.5288417
-            ],
-            [
-                172.6748169,
-                -43.5262494
-            ]
-        ]
-    }
+  type: 'Feature',
+  id: 'way/23150691',
+  properties: {
+    highway: 'residential',
+  },
+  geometry: {
+    type: 'LineString',
+    coordinates: [
+      [
+        172.6788568,
+        -43.5289081
+      ],
+      [
+        172.6787559,
+        -43.5288417
+      ],
+      [
+        172.6748169,
+        -43.5262494
+      ]
+    ]
+  }
 }
 
 describe('Laneify', function () {
@@ -38,8 +39,11 @@ describe('Laneify', function () {
     When('the split function is called', function () {
       result = laneify.split(way)
     })
-    Then('the result should have 2 features', function () {
-      result.length.should.equal(2)
+    Then('the result should be a GeoJSON feature collection', function () {
+      result.type.should.equal('FeatureCollection')
+    })
+    And('the result should have 2 features', function () {
+      result.features.length.should.equal(2)
     })
   })
 })
