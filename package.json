@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "clone": "^0.1.18",
+    "object-merge": "^2.5.1",
     "random-number": "0.0.6"
   }
 }
