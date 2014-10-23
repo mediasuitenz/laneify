@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git@github.com:mediasuitenz/laneify.git"
   },
-  "keywords": ["OSM", "GeoJSON", "lanes", "LineString", "way"],
+  "keywords": [
+    "OSM",
+    "GeoJSON",
+    "lanes",
+    "LineString",
+    "way"
+  ],
   "author": "coder_stu",
   "license": "MIT",
   "bugs": {
@@ -22,8 +28,8 @@
     "chai": "^1.9.1",
     "jshint": "^2.5.5",
     "mocha": "^1.21.4",
+    "mocha-given": "^0.1.3",
     "testem": "^0.6.18"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

@@ -14,9 +14,14 @@
     "__dirname": false,
     "describe": false,
     "it": false,
-    "beforeEach": false
+    "beforeEach": false,
+    "Given": false,
+    "When": false,
+    "Then": false,
+    "And": false
   },
   "asi": true,
   "node": true,
-  "indent": 2
+  "indent": 2,
+  "newcap": false
 }
