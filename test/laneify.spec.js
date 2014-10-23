@@ -39,7 +39,7 @@ describe('Laneify', function () {
       result = laneify.split(way)
     })
     Then('the result should have 2 features', function () {
-      result.length.should.be(2)
+      result.length.should.equal(2)
     })
   })
 })
