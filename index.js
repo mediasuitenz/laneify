@@ -3,8 +3,8 @@
 var splitter = require('./lib/splitter')
 
 var laneify = {
-  split: function (way) {
-    return splitter(way)
+  split: function (road, options) {
+    return splitter(road, options)
   }
 }
 

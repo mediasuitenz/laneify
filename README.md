@@ -9,10 +9,12 @@ Laneify
 ### Example usage
 Given some Open Street Maps GeoJSON way feature:
 ```js
+var laneify = require('laneify')
+
 var offset = 1 // The geographical distance to offset by (in WGS84 coordinate space)
 var road = require('./validGeoJSONWay.json')
 
-var lanes = laneify.split(road, offset)
+var lanes = laneify.split(road, { laneOffset: offset })
 ```
 
 ### Output
