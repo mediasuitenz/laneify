@@ -1,6 +1,6 @@
 {
   "name": "laneify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create offset GeoJSON LineString features (lanes) based on an OSM way (road)",
   "main": "index.js",
   "scripts": {
